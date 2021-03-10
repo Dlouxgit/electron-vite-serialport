@@ -2,7 +2,7 @@
   "name": "logistics",
   "version": "0.0.1",
   "main": "dist/main/build.js",
-  "author": "MangoTsing",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "dev": "npm run dev:all",
@@ -83,6 +83,7 @@
     "vite",
     "electron",
     "vue3",
-    "rollup"
+    "rollup",
+    "serialport"
   ]
 }
