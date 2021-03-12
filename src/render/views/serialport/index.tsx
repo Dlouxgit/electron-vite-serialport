@@ -2,7 +2,7 @@ import { defineComponent, inject, reactive } from 'vue'
 
 export default defineComponent({
   setup() {
-    const ipc = inject('ipc')
+    const ipc: unknown = inject('ipc')
     let state = reactive({
       rfid: '321',
       rfid2: '',
