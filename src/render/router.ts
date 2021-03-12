@@ -5,26 +5,30 @@ import Create from './views/serialport/index'
 
 const routes: RouteRecordRaw[] = [
   {
-      path: '/',
-      name: 'index',
-      component: Index as any,
-      meta: {
-          title: '首页'
-      }
+    path: '/',
+    name: 'index',
+    component: Index as any,
+    meta: {
+      title: '首页',
+    },
   },
   {
-      path: '/create',
-      name: 'create',
-      component: Create as any,
-      meta: {
-          title: '创建'
-      }
+    path: '/create',
+    name: 'create',
+    component: Create as any,
+    meta: {
+      title: '创建',
+    },
+  },
+  {
+    path: '/login',
+    component: () => import('./views/serialport')
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes 
+  routes,
 })
 
 export default router

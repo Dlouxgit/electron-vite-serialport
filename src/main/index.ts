@@ -47,6 +47,7 @@ function init() {
   
   const user: User = (store.get(USER_INFO) ?? {}) as User
   
+  console.log('user.token', user.token)
   if (user.token) {
     mainWin.open()
   } else {

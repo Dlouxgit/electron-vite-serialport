@@ -22,7 +22,8 @@ export class Login extends WinSubscribe {
       // resizable: false,
       // frame: !app.isPackaged
     })
-    this.win.loadURL(`${this.url}#/login`) // 这里使用 hash 模式，确保打包后正常加载
+    console.log('this.url', `${this.url}/login`)
+    this.win.loadURL(`${this.url}/login`) // 这里使用 hash 模式，确保打包后正常加载
 
   }
 

@@ -15,7 +15,7 @@ module.exports = (env = 'production') => {
       sourcemap: true,
     },
     plugins: [
-      nodeResolve({ jsnext: true, preferBuiltins: true, browser: true, extensions: ['.ts'] }), // 消除碰到 node.js 模块时⚠警告
+      nodeResolve({ jsnext: true, preferBuiltins: true, browser: true, extensions: ['.ts', '.tsx', '.vue'] }), // 消除碰到 node.js 模块时⚠警告
       commonjs(),
       json(),
       esbuild({
@@ -60,6 +60,8 @@ module.exports = (env = 'production') => {
       'https',
       'path',
       'electron',
+      'electron-store',
+      'electron-is-dev'
     ],
   }
 }
