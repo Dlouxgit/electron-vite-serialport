@@ -17,14 +17,12 @@ export class Login extends WinSubscribe {
       ...options,
       title: '登录',
       ...this.opts,
-      // width: 540,
-      // height: 390,
+      width: 540,
+      height: 390,
       // resizable: false,
-      // frame: !app.isPackaged
+      // frame: false
     })
-    console.log('this.url', `${this.url}/login`)
-    this.win.loadURL(`${this.url}/login`) // 这里使用 hash 模式，确保打包后正常加载
-
+    this.win.loadURL(`${this.url}#/login`) // 这里使用 hash 模式，确保打包后正常加载
   }
 
   public close() {

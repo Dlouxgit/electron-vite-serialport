@@ -14,8 +14,8 @@ const config: UserConfig = {
   root,
   resolve: {
     alias: {
-      '/@': root,
-      '/@src': join(__dirname, './src'),
+      '@': root,
+      '@src': join(__dirname, './src'),
     }
   },
   base: './',
